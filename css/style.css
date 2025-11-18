@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Đổi đơn vị px sang rem */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* 1.6rem = 16px */
+  font-size: 1.6rem;
+}
+
+/* Common CSS */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Header section */
+
+/* End header section */
