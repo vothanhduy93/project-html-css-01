@@ -2,8 +2,13 @@
   box-sizing: border-box;
 }
 
-/* Đổi đơn vị px sang rem */
+:root {
+  --primary-text-color: #171100;
+  --background-color: #fffcf4;
+  --white-color: #fff;
+}
 
+/* Đổi đơn vị px sang rem */
 html {
   font-size: 62.5%;
 }
@@ -11,6 +16,7 @@ html {
 body {
   /* 1.6rem = 16px */
   font-size: 1.6rem;
+  font-family: Poppins, sans-serif;
 }
 
 /* Common CSS */
@@ -24,4 +30,78 @@ li {
 
 /* Header section */
 
-/* End header section */
+.header {
+  background: var(--background-color);
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.header .main-content {
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  /* short hand: margin: 0 auto; */
+  max-width: calc(100% - 24px);
+}
+
+.header .body {
+  display: flex;
+  align-items: center; /* Căn giữa theo trục dọc */
+}
+
+.header nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.header nav a {
+  font-size: 1.6rem; /* tức là 16px */
+  line-height: 28px;
+  color: #5f5b53;
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
+/* Pseudo class: lớp giả */
+.header nav a:hover {
+  color: var(--primary-text-color);
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.header nav a.active {
+  font-weight: 600; /* semi-bold */
+  color: var(--primary-text-color);
+  position: relative;
+}
+
+/* Pseudo element */
+.header nav a.active::after {
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  background: var(--primary-text-color);
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: 22px;
+}
+
+.header .body .btn-sign-up {
+  width: 144px;
+  /* height: 50px; */
+  line-height: 50px;
+  background: var(--primary-text-color);
+  color: var(--white-color);
+  border-radius: 24.5px;
+  -webkit-border-radius: 24.5px;
+  -moz-border-radius: 24.5px;
+  -ms-border-radius: 24.5px;
+  -o-border-radius: 24.5px;
+  text-align: center;
+  margin-left: 49px;
+}
