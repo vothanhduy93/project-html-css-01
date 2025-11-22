@@ -4,8 +4,10 @@
 
 :root {
   --primary-text-color: #171100;
+  --second-text-color: #5f5b53;
   --background-color: #fffcf4;
   --white-color: #fff;
+  --font-heading: Sen, sans-serif;
 }
 
 /* Đổi đơn vị px sang rem */
@@ -36,12 +38,25 @@ li {
   padding-bottom: 44px;
 }
 
-.header .main-content {
+.main-content {
   width: 1170px;
   margin-right: auto;
   margin-left: auto;
   /* short hand: margin: 0 auto; */
   max-width: calc(100% - 24px);
+}
+
+.btn {
+  width: 144px;
+  line-height: 50px;
+  background: var(--primary-text-color);
+  color: var(--white-color);
+  border-radius: 24.5px;
+  -webkit-border-radius: 24.5px;
+  -moz-border-radius: 24.5px;
+  -ms-border-radius: 24.5px;
+  -o-border-radius: 24.5px;
+  text-align: center;
 }
 
 .header .body {
@@ -92,16 +107,137 @@ li {
 }
 
 .header .body .btn-sign-up {
-  width: 144px;
-  /* height: 50px; */
-  line-height: 50px;
-  background: var(--primary-text-color);
-  color: var(--white-color);
-  border-radius: 24.5px;
-  -webkit-border-radius: 24.5px;
-  -moz-border-radius: 24.5px;
-  -ms-border-radius: 24.5px;
-  -o-border-radius: 24.5px;
-  text-align: center;
   margin-left: 49px;
+}
+
+/* Hero section */
+.hero {
+  background: var(--background-color);
+}
+
+.hero .main-content {
+  display: flex;
+}
+
+.hero .left-box {
+  width: 48.7%;
+  position: relative;
+}
+
+.hero .left-box > img {
+  width: 470px;
+  height: 685px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.hero .left-box .summary {
+  width: 270px;
+  height: 244px;
+  background-color: #fff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  padding: 24px;
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
+
+.hero .left-box .item {
+  display: flex;
+  margin: 7px 0; /* top-bottom: 7px và left-right: 0 */
+  margin-top: 7px;
+  margin-bottom: 7px;
+  align-items: center;
+}
+
+.hero .left-box span {
+  display: block;
+}
+
+.hero .left-box .icon {
+  margin-right: 16px;
+  width: 48px;
+  height: 48px;
+}
+
+.hero .left-box .course-content span:first-child {
+  font-size: 1.4rem;
+  line-height: 26px;
+}
+
+.hero .left-box .course-content span:last-child {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+
+.hero .left-box .summary .item:first-child {
+  margin-top: 0;
+}
+
+.hero .left-box .summary .item:last-child {
+  margin-bottom: 0;
+}
+
+.hero .right-box {
+  width: 51.3%;
+  padding-left: 116px;
+}
+
+.hero .right-box h1 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 5.8rem;
+  width: 488px;
+  line-height: 68px;
+  letter-spacing: -2%;
+  color: var(--primary-text-color);
+}
+
+.hero .right-box .desc {
+  font-size: 1.8rem;
+  line-height: 30px;
+  color: var(--second-text-color);
+  margin-top: 28px;
+  margin-bottom: 38px;
+}
+
+.hero .right-box .call-to-action {
+  display: flex;
+}
+
+.hero .right-box .btn-see-courses {
+  width: 180px;
+  line-height: 64px;
+  background-color: #ffb900;
+  height: 64px;
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.hero .right-box .btn-watch-video {
+  display: flex;
+  background: none;
+  border: none;
+  align-items: center;
+  margin-left: 28px;
+}
+
+.hero .right-box .btn-watch-video span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: -10px;
 }
