@@ -8,6 +8,7 @@
   --background-color: #fffcf4;
   --white-color: #fff;
   --font-heading: Sen, sans-serif;
+  --primary-accent-color: #ffb900;
 }
 
 /* Đổi đơn vị px sang rem */
@@ -21,16 +22,21 @@ body {
   font-family: Poppins, sans-serif;
 }
 
-/* Common CSS */
+/****************************** Common CSS ******************************/
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 li {
   list-style: none;
 }
 
-/* Header section */
+button {
+  cursor: pointer;
+}
+
+/****************************** Header section ******************************/
 
 .header {
   background: var(--background-color);
@@ -110,7 +116,7 @@ li {
   margin-left: 49px;
 }
 
-/* Hero section */
+/****************************** Hero section ******************************/
 .hero {
   background: var(--background-color);
 }
@@ -240,4 +246,214 @@ li {
   font-weight: 600;
   line-height: 30px;
   margin-top: -10px;
+}
+
+/****************************** Our Popular Courses ****************************** */
+.popular-courses {
+  padding-top: 250px;
+  padding-bottom: 200px;
+}
+
+.popular-courses .info-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-courses .info-box .heading {
+  width: 458px;
+}
+
+.popular-courses .info-box h2 {
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: bold;
+  line-height: 48px;
+  letter-spacing: -2%;
+  color: var(--primary-text-color);
+}
+
+.popular-courses .info-box p {
+  font-size: 1.8rem;
+  line-height: 30px;
+  color: var(--second-text-color);
+  margin-top: 16px;
+}
+
+.popular-courses .pre-next-button button:first-child,
+.popular-courses .pre-next-button button:last-child {
+  background: white;
+  border: 1px solid var(--primary-accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.popular-courses .pre-next-button button:last-child {
+  background: var(--primary-accent-color);
+  color: white;
+  margin-left: 18px;
+}
+
+.popular-courses .courses-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+}
+
+.popular-courses .course-item {
+  box-shadow: 2px 4px 12px -10px #5f5b53;
+}
+
+.popular-courses .course-item .thumbnail {
+  width: 370px;
+  height: 278px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.popular-courses .course-item .course-info {
+  padding: 22px;
+}
+
+.popular-courses .course-info h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+
+.popular-courses .course-info .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primary-text-color);
+}
+
+.popular-courses .course-info .heading span {
+  color: var(--primary-accent-color);
+  font-size: 1.6rem;
+  line-height: 28px;
+  margin-top: 1px;
+  margin-left: 6px;
+}
+
+.popular-courses .course-info .heading img {
+  width: 18px;
+  height: 18px;
+}
+
+.popular-courses .course-info .heading div {
+  display: flex;
+  align-items: center;
+}
+
+.popular-courses .course-info .desc {
+  font-size: 1.4rem;
+  line-height: 26px;
+  color: var(--second-text-color);
+  margin-bottom: 12px;
+}
+
+.popular-courses .course-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-courses .course-price span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+
+.popular-courses .course-price .btn-book-now {
+  background-color: var(--primary-accent-color);
+  color: white;
+}
+
+.popular-courses .course-price .btn-book-now:hover {
+  background-color: var(--primary-text-color);
+}
+
+/****************************** Testimonials ****************************** */
+
+.testimonials {
+  background-color: #2e2100;
+  color: white;
+  padding-top: 104px;
+  padding-left: 150px;
+  padding-bottom: 88px;
+}
+
+.testimonials .main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials .left-box .avatar {
+  width: 72px;
+  height: 72px;
+}
+
+.testimonials .left-box .author {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 34px;
+  color: #f7f7f7;
+  margin-top: 18px;
+}
+
+.testimonials .left-box .position {
+  font-size: 1.4rem;
+  line-height: 26px;
+  color: #bfbcb2;
+  margin-top: 4px;
+  margin-bottom: 28px;
+  display: block;
+}
+
+.testimonials .left-box .slides {
+  display: flex;
+  gap: 6px;
+}
+.testimonials .left-box .slides .slide-item {
+  width: 6px;
+  height: 6px;
+  background-color: #634700;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+}
+
+.testimonials .left-box .slides .slide-item.active {
+  background-color: var(--primary-accent-color);
+}
+
+.testimonials .right-box {
+  width: 770px;
+  position: relative;
+}
+
+.testimonials .right-box img {
+  position: absolute;
+}
+
+.testimonials .right-box .quote {
+  font-style: italic;
+  font-size: 2.6rem;
+  line-height: 40px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
